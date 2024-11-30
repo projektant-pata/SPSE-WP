@@ -21,12 +21,12 @@ Cilem bylo naucit se:
 - zaklady SEO
 
 ## 🌟 Stránky v rozcestníku
-1.D (2022-2023)
+### 1.D (2022-2023)
 - [About me](#about-me)
 - [Blog](#blog)
 - [OnePage](#onepage)
 - [Zaverecny projekt](#zaverecny-projekt)
-2.D (2023-2024)
+### 2.D (2023-2024)
 - [Rozcestnik](#rozcestnik)
 - [SEO](#seo)
 - [For better Piskod (tipy a triky)](#for-better-piskod-tipy-a-triky)
