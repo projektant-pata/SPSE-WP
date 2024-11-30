@@ -1,4 +1,4 @@
-🌐 Webový rozcestník
+# 🌐 Webový rozcestník
 
 Školní projekt z prvního a druhého ročníku SPŠE Pardubice.
 📖 O projektu
