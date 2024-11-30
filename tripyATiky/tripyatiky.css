@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
+ @-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+ @-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+.animaceBarvaLeva{
+    animation: slide-in-left 1.5s;
+    opacity: 1;
+}
+.animaceBarvaPrava{
+    animation: slide-in-right 1.5s;
+    opacity: 1;
+}
+.animaceCtverec{
+    opacity: 1;
+    animation: scale-in-center 1s;
+}
+.animace{
+    opacity: 0;
+}
+
+:root {
+    --primary-color: #cc5500;
+    --secondary-color: #A0E548;
+    --silnaSecondary-color: #86cb2c;
+    --jemnaSecondary-color: rgb(209, 227, 186);
+    --bila: #EAEAEA;
+    --vyrazneBila: rgb(240, 240, 240);
+    --cerna: #111;
+}
+
+.uglyTheme {
+    --primary-color: #ff0080;
+    --secondary-color: #00ff00;
+    --silnaSecondary-color: #ffcc00;
+    --jemnaSecondary-color: #8400ff;
+    --bila: rgb(218, 165, 32);;
+    --vyrazneBila: #ff9900;
+    --cerna: #0000ff;
+}
+.darkTheme {
+    --primary-color: #cc5500;
+    --secondary-color: #639b19;
+    --silnaSecondary-color: #86cb2c;
+    --jemnaSecondary-color: #202020;
+    --bila: #111;
+    --vyrazneBila: #2e2e2e;;
+    --cerna: #EAEAEA;
+}
+.secondaryTheme{
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --silnaSecondary-color: #e74c3c;
+    --jemnaSecondary-color: #e74c3c;
+    --bila: #ecf0f1;
+    --vyrazneBila: #ffffff;
+    --cerna: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    transition: 0.5s;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: var(--cerna);
+}
+body{
+    background-color: var(--bila);
+}
+.mezera {
+    width: 100%;
+    background-color: var(--bila);
+}
+
+.mensi {
+    height: 100px;
+}
+
+.stredni {
+    height: 250px;
+}
+
+.velka {
+    height: 300px;
+}
+
+#hero {
+    max-width: 1400px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+}
+
+#leva {
+    height: 100%;
+    width: 52%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#leva h2 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#leva h2 span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#text {
+    width: 80%;
+}
+
+#leva h3 {
+    font-size: 20px;
+}
+#leva h3 span{
+    color: var(--primary-color);
+}
+
+#tlacitka {
+    height: 50px;
+    display: flex;
+}
+
+.tlacitko {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    border-radius: 30px;
+    width: 180px;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.modra {
+    background-color: var(--secondary-color);
+}
+
+.oranzova{
+    color: var(--primary-color);
+}
+.zelena{
+    color: var(--secondary-color);
+}
+.zelenaSilna{
+    color: var(--silnaSecondary-color);
+}
+
+#cisla {
+    display: flex;
+    aspect-ratio:inherit;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cislo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.cislo p{
+    text-align: center;
+    font-size: 18px;
+}
+.cislo p span{
+    font-size: 40px;
+}
+
+#prava {
+    height: 100%;
+    width: 48%;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prava img {
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+
+#ctvrty {
+    width: 100%;
+    background-color: var(--bila);
+}
+
+#ctvrty h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+#ctvrty h2 span{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+
+#minictvrty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 68% 32% 55% 45% / 46% 54% 46% 54%;
+    background-color: var(--jemnaSecondary-color);
+    margin: auto;
+
+}
+
+#ctverecky {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    width: 850px;
+}
+
+.ctverec {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--vyrazneBila);
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.ctverec h3 {
+    font-size: 3.7rem;
+    font-weight: normal;
+    margin-top: -40px;
+    margin-bottom: 40px;
+
+}
+
+.ctverec h4 {
+    font-size: 1.4rem;
+
+}
+
+.barvicky{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.barvicky h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+.barvicky h2 span{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.barvickyPrava h3 {
+    font-size: 2.25rem;
+}
+.prvniBarvicky{
+    display: flex;
+
+}
+.barvickyLeva{
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.barvickyPrava{
+    width: 60%;
+}
+.barvickyPrava h4{
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.kolecko {
+    height: 150px;
+    width: 150px;
+    background-color: var(--secondary-color);
+    border-radius: 50%; 
+    margin: auto;
+    display: grid;
+    place-items: center;
+    
+}
+.kolecko:hover{
+    background-color: var(--silnaSecondary-color);
+    scale: 1.2;
+}
+.kolecko:hover p{
+    color: var(--bila);
+}
+.kolecko p{
+    font-size: 1.4rem;
+}
+
+#lastTrip{
+    width: 100%;
+    background-color: var(--jemnaSecondary-color);
+    padding-top: 100px;
+}
+#lastTik{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#lastTrip h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+#lastTrip h2 span{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+
+#karty {
+    display: flex;
+    justify-content: space-between;    
+
+}
+
+.karta {
+    width: 30%;
+    background-color: var(--bila);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.karta h4 {
+    font-size: 1.2rem;
+}
+.karta h4 span{
+    color: var(--primary-color);
+}
+
+.nadpiskarta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nadpiskarta h3 {
+    margin: 0;
+    font-size: 2.4rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+
+.custom-shape-divider-bottom-1704291318 {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704291318 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-bottom-1704291318 .shape-fill {
+    fill: #D1E3BA;
+}
+
+
+
+@media (max-width: 1000px) {
+    #hero {
+
+        flex-direction: column-reverse;
+    }
+    
+    #leva {
+        height: 50%;
+        width: 100%;
+
+    }
+    
+    #leva h2 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #text {
+        width: 80%;
+    }
+    
+    #leva h3 {
+        font-size: 20px;
+    }
+    #leva h3 span{
+        color: var(--primary-color);
+    }
+    
+    #tlacitka {
+        height: 50px;
+        display: flex;
+    }
+    
+    .tlacitko {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        border-radius: 30px;
+        width: 180px;
+        font-size: 20px;
+        font-weight:600;
+    }
+    #cisla {
+        display: flex;
+        aspect-ratio:inherit;
+        width: 60%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    
+    .cislo {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .cislo p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .cislo p span{
+        font-size: 40px;
+    }
+    
+    #prava {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    
+    #prava img {
+        width: 80%;
+        border-radius: 50%;
+        margin: auto;
+    
+    }
+    #ctvrty {
+        width: 100%;
+        background-color: var(--bila);
+    }
+    
+    #ctvrty h2 {
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    #ctvrty h2 span{
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    
+    
+    
+    #minictvrty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        background-color: #11111100;
+    }
+    
+    #ctverecky {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 100%;
+    }
+    
+    .ctverec {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--vyrazneBila);
+        margin: auto;
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .ctverec h3 {
+        font-size: 3.7rem;
+        font-weight: normal;
+        margin-top: -40px;
+        margin-bottom: 40px;
+    
+    }
+    
+    .ctverec h4 {
+        font-size: 1.4rem;
+    
+    }
+    
+    .barvicky{
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+    .barvicky h2 {
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    .barvicky h2 span{
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .barvickyPrava h3 {
+        font-size: 2.25rem;
+    }
+    .prvniBarvicky{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .barvickyLeva{
+        width: 30%;
+        margin: auto;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 30px;
+    }
+    .barvickyPrava{
+        width: 80%;
+        margin: auto;
+    }
+    .barvickyPrava h4{
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    
+    .kolecko {
+        height: 150px;
+        width: 150px;
+        background-color: var(--secondary-color);
+        border-radius: 50%; 
+        margin: auto;
+        display: grid;
+        place-items: center;
+        
+    }
+    .kolecko:hover{
+        background-color: var(--silnaSecondary-color);
+        scale: 1.2;
+    }
+    .kolecko:hover p{
+        color: var(--bila);
+    }
+    .kolecko p{
+        font-size: 1.4rem;
+    }
+    
+    #lastTrip{
+        width: 100%;
+        background-color: var(--jemnaSecondary-color);
+        padding-top: 100px;
+    }
+    #lastTik{
+        max-width: 1400px;
+        margin: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #lastTrip h2 {
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    #lastTrip h2 span{
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    
+    
+    
+    #karty {
+        display: flex;
+        justify-content: space-between;    
+        flex-direction: column;
+    }
+    
+    .karta {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    
+    .karta h4 {
+        font-size: 1.2rem;
+    }
+    .karta h4 span{
+        color: var(--primary-color);
+    }
+    
+    .nadpiskarta {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .nadpiskarta h3 {
+        margin: 0;
+        font-size: 2.4rem;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+
+}

@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Monoton");
+
+::-webkit-scrollbar {
+    display: none;
+}
+.balz{
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    transition: all 0.5s ease 0s;
+    text-decoration: none   ;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#odrazka {
+    width: 100%;
+    height: 4px;
+    background-color: #feb600;
+
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h4 {
+    color: white;
+    align-self: center;
+    font-size: 4rem;
+}
+
+.supertext {
+    font-family: "Monoton", sans-serif;
+    font-weight: normal;
+    color: #feb600;
+}
+
+ /*Nav bar*/
+ nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    color: white;
+    background-color: #222222 ;
+    align-items: center;
+    height: 4vh;
+}
+nav p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.5s all ease 0s;
+
+}
+nav a{
+    text-decoration: none;
+}
+nav p:hover{
+    color: #feb600;
+}
+nav li{
+    list-style-type: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}   
+nav li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+
+nav li a:hover{
+    color: #feb600;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+
+#vobal0 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.obal01 {
+    width: 50%;
+    height: 100vh;
+}
+
+.obal02 {
+    width: 50%;
+    background-image: url("obrazky/image_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#mobal0 {
+    width: 80%;
+    height: 100vh;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tlacitko {
+    background-color: #feb600;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.tlacitko:hover {
+    background-color: #fe7700;
+}
+
+#body2 {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#pozadi {
+    background-image: url("obrazky/pxfuel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#megaramecek {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    height: 100vh;
+    gap: 5vh;
+}
+
+.megatlacitko1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 5vh;
+    margin-bottom: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.megatlacitko2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin: 5vh;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.megatlacitko3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin: 5vh;
+    margin-top: 0;
+    margin-right: 0;
+
+
+}
+
+.megatlacitko4 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin: 5vh;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.megatlacitko1:hover {
+    scale: 105%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.megatlacitko2:hover {
+    scale: 105%;
+    background-color: rgba(0, 0, 0, 0.65);
+
+
+}
+
+.megatlacitko3:hover {
+    scale: 105%;
+    background-color: rgba(0, 0, 0, 0.65);
+
+}
+
+.megatlacitko4:hover {
+    scale: 105%;
+    background-color: rgba(0, 0, 0, 0.65);
+
+}
+
+#body3{
+    max-width: 1400px;
+    align-items: center;
+    margin: auto;
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.nadpis2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.bod{
+    font-size: 1.5rem;
+    color: black;
+}
+.bod:hover{
+    color: rgb(198, 198, 198);
+}
+
+.karel{
+    width: 100%;
+    height: 100%;
+}
+.pepa{
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.bimg{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.body4{
+    max-width: 1400px;
+    margin: auto;
+}
+.meganadpis{
+    font-size: 4rem;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.textobrazek{
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.obrazek{
+   float: right;
+   padding-left: 30px;
+   padding-bottom: 30px;
+   width: 20%;
+}
+
+.loga{
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 96vh;
+}
+.loga a{
+    width: 28%;
+}
+.loga a:hover{
+    scale: 105%;
+}
+.logo{
+    width: 100%;
+}
+
+.uzasnablokada{
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .tlacitko{
+        margin-bottom: 50px;
+    }
+    .loga{
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+}
+@media (max-width: 800px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px ;
+    }
+    li{
+        margin-top: 10px;
+    }
+
+    #vobal0{
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    .obal01{
+        width: 100%;
+    }
+    .obal02{
+        width: 0;
+    }
+    .balz{
+        overflow: auto;
+    }
+    .uzasnablokada{
+        overflow: auto;
+    }
+    .tlacitko{
+        margin-bottom: 50px;
+    }
+
+}

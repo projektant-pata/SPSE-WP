@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.5s ease 0s;
+
+}
+
+body{
+    background-color: #333333;
+
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    background-color: #d2cfd9;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+#main img {
+    height: 100vh;
+}
+
+#leftmain {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+}
+#textleftmain{
+
+}
+
+#textleftmain h1{
+}
+h1{
+    font-size: 5em;
+    margin-bottom: 50px;
+    color: black;
+}
+h2{
+    font-size: 2em;
+    color: black;
+}
+h3{
+    font-size: 1.5em;
+    color: black;
+
+}
+.cara{
+    height: 2px;
+    width: 80%;
+    background-color:#88b44c;
+    margin: 5px auto;
+}
+
+
+.mainelse{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.velkaTrida{
+    width: 30%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.projektyP{
+    width: 65%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.projektyL{
+    width: 65%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.projektySmolR{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.projektySmolR a{
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+.projektySmolL{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.projektySmolL a{
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.projektySmolL a:hover{
+    color:#88b44c;
+}
+.projektySmolR a:hover{
+    color: #88b44c;
+}
+
+.velkaTrida p{
+    font-size: 15em;
+    color: #88b44c;
+}
+.megacara{
+    width: 100%;
+    height: 2px;
+    background-color: #88b44c;
+    margin: auto;
+}
+
+#nejhlavnejsidivus{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+footer{
+    background-color: #1f1f1f;
+    width: 100%;
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+#obsahfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+
+#pravyfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+footer p{
+    color: white;
+    font-size: 3vh;
+}
+
+.kontakty{
+    font-size: 5vh;
+}
+
+.animaceVlevo{
+    
+}
+
+.horizontalniCara{
+    height: 7vh;
+    width: 2px;
+    background-color: #88b44c;
+    margin: 0 20px;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+

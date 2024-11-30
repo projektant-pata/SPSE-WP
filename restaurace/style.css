@@ -1,0 +1,832 @@
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+
+::selection {
+    color: var(--bila);
+    /* Skryje původní text */
+    background-color: var(--mainTmavsi);
+}
+
+
+:root {
+    --bila: #fff;
+    --cerna: #1c1713;
+    --main: #b39575;
+    --mainTmavsi: #8c7359;
+    --background: #2b3831;
+    --lepsibackground: rgb(40, 53, 46);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', arial, sans-serif;
+    transition: 0.5s;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: var(--cerna);
+}
+
+body {
+    background: url(../img/restaurace/background.jpg);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.mezera {
+    width: 100%;
+}
+
+.stredni {
+    height: 20vh;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 3vw;
+    color: var(--bila);
+    font-weight: lighter;
+    margin-left: 10%;
+}
+
+h2 span {
+    color: #FFFFFF;
+    font-family: "Raleway", Sans-serif;
+    font-size: 12vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.8em;
+}
+
+#main {
+    background: url(../img/restaurace/pozadi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+nav {
+    height: 110px;
+    width: 100%;
+    background-color: var(--lepsibackground);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.ul {
+    display: flex;
+    width: 500px;
+    justify-content: right;
+}
+
+.ul:last-child {
+    justify-content: left;
+}
+
+.navmezera {
+    height: 110px;
+}
+
+nav ul li {
+    margin: auto 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.ul li {
+    margin: 10px;
+}
+
+.ul li a {
+    color: var(--bila);
+    font-size: 20px;
+}
+
+.ul li a:hover {
+    color: var(--main);
+}
+
+#logoUL {
+    margin: 0 50px;
+}
+
+#logoUL li {
+    background-color: var(--bila);
+    height: 28vh;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+}
+
+#logoUL li img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+#navkontakt{
+    position: absolute;
+    z-index: 1;
+    right: 39px;
+    padding:10px 20px ;
+    top: 31px;
+    background-color: var(--main);
+    border-radius: 20px;
+    border: 1px solid var(--main);
+}
+#navkontakt:hover{
+    background-color: transparent;
+}
+#navkontakt p{
+    color: var(--bila);
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--lepsibackground);
+    padding: 0 50px;
+}
+
+footer #minifooter {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: auto;
+}
+
+footer #minifooter .castfooter {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mensicastfooter {
+    width: 15%;
+}
+
+.vetsicastfooter {
+    width: 25%;
+}
+
+footer #minifooter .castfooter img {
+    width: 80%;
+}
+
+footer #minifooter .castfooter a:hover {
+    font-weight: 300;
+}
+
+.footernadpis {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bila);
+    margin-bottom: 10px;
+}
+
+.footerp {
+    font-size: 18px;
+    color: var(--bila);
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.footerp span {
+    font-size: 18px;
+    color: var(--bila);
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#mainBody {
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-top: 15px;
+}
+
+#mainBody div {
+    border-left: #B1916F solid 4px;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: white;
+    width: 400px;
+}
+
+
+
+#lokace {
+    width: 100%;
+    background-color: var(--main);
+    color: var(--background);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lokace:hover p {
+    color: var(--bila);
+}
+
+#lokace img {
+    height: 30px;
+}
+
+#lokace p {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+
+
+
+#onas {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+#onas article {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    padding: 0 50px;
+}
+
+#onas article img {
+    width: 42%;
+    object-fit: cover;
+
+}
+
+#onas article .obsahArticle {
+    margin-left: 120px;
+
+}
+
+#onas article .obsahArticle h3 {
+    color: var(--bila);
+    font-weight: 900;
+    font-size: 70px;
+}
+
+#onas article .obsahArticle h4 {
+    color: var(--bila);
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#onas article .obsahArticle h4 span {
+    color: var(--main);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#onas article .obsahArticle .onastext {
+    color: var(--bila);
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
+#onasbody {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding-top: 15px;
+}
+
+#onasbody .onasbod {
+    border-left: #B1916F solid 4px;
+    height: 150px;
+    padding: 5px 10px;
+    width: calc(700px/3);
+
+}
+
+#onasbody .onasbod p {
+    font-size: 20px;
+    color: white;
+
+}
+
+#onasbody .onasbod p span {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#onasbody2 {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding-top: 15px;
+}
+
+#onasbody2 .onasbod {
+    border-left: var(--main) solid 4px;
+    padding: 5px 10px;
+    width: calc(700px/3);
+
+}
+
+#onasbody2 .onasbod p {
+    font-size: 20px;
+    color: white;
+
+}
+
+#onasbody2 .onasbod p span {
+    color: white;
+    font-size: 1.35vw;
+    font-weight: bold;
+}
+
+#onasbody2 a:hover .onasbod p {
+    color: var(--main);
+}
+
+.mezeraonas {
+    height: 15px;
+}
+
+
+#novinky {
+    min-height: 90vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#mininovinky {
+    width: 50%;
+    background-color: var(--main);
+    margin-left: 40%;
+    padding: 4%;
+}
+
+#mininovinky h4 {
+    font-size: 4vw;
+    font-weight: 900;
+    color: var(--background);
+}
+
+#mininovinky p {
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 40px;
+}
+
+#mininovinky a {
+    padding: 12px 24px;
+    color: white;
+    background-color: var(--background);
+
+}
+
+#caraNovinky {
+    width: 70%;
+    border: 2px var(--background) solid;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+#onasprvni {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.onasprvnimini {
+    height: 640px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.onasprvnimini img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    /* Zajišťuje, že obrázek bude vyplňovat rodičovský prvek, zachovávající poměr stran a případně částečně jej překrývá */
+
+}
+
+.onasprvniminimini {
+    width: 50%;
+    height: 100%;
+    background-color: var(--main);
+    padding: 10%;
+}
+
+.onasprvninadpis {
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--background);
+}
+
+.onasprvnitext {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--background);
+    line-height: 1.45;
+}
+
+.onasprvnipodtrhnuti {
+    width: 100%;
+    height: 2px;
+    background-color: var(--background);
+    margin-bottom: 20px;
+}
+
+.nejlepsirestaurace {
+    width: 45%;
+    margin-top: -50px;
+}
+
+
+
+#nabidka {
+    padding-top: 30px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#nabidkaVyber {
+    padding-top: 20vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+#nabidkaVyber div {
+    border-bottom: 3px solid var(--bila);
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+#nabidkaVyber div p {
+    font-size: 34px;
+    color: var(--bila);
+}
+
+#nabidkaVyber .aktivniNabidka {
+    border-bottom: var(--main) 3px solid;
+}
+
+#nabidkaVyber .aktivniNabidka p {
+    color: var(--main);
+}
+
+.nabidkaPolozky {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.nabidkaPolozka {
+    width: 25%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.aktivniMenu{
+    opacity: 1;
+}
+
+.nabidkaPolozkaPolozka {}
+
+.nabidkaPolozkaNadpis {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--bila);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.nabidkaPolozkaPodnadpis {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--bila);
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+
+}
+
+.nabidkaPolozkaText {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--bila);
+    margin-bottom: 15px;
+}
+
+
+#akce{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.akcenadpis{
+    padding-top: 250px;
+
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--main);
+    text-align: center;
+}
+.karta{
+    margin-top: 50px;
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--bila);
+    padding: 20px 30px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.karta img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+.karta h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--background);
+    margin-bottom: 20px;
+
+}
+.karta p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--background);
+}
+
+#kontakt{
+    width: 1200px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;    
+}
+.kontaktnadpis{
+    font-size: 2.1rem;
+    color: var(--bila);
+}
+.kontaktnadpiscara{
+    width: 100px;
+    height: 4px;
+    background-color: var(--main);
+    margin-bottom: 15px;
+}
+.kontakttexttext{
+    font-size: 1.15rem;
+    color: var(--bila);
+    margin-bottom: 60px;
+}
+.kontakttext{
+    width: 45%;
+}
+.kontaktform{
+    width: 45%;
+    background: var(--main);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    padding: 3rem 2.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 16px;
+
+}
+.kontaktform form {
+    display: flex;
+    flex-direction: column;
+}
+.kontaktform{
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+}
+.kontaktform h4 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--bila);
+}
+.kontaktform form label {
+    margin-bottom: 0.4rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+.kontaktform form input, .kontaktform form textarea {
+    margin-bottom: 1.5rem;
+    border: 2px solid #dadada;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    padding: 7px 12px;
+    font-weight: 400;
+}
+.btn-default{
+    cursor: pointer;
+}
+.custom-shape-divider-top-1712591499 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1712591499 svg {
+    position: relative;
+    display: block;
+    width: 170px;
+    height: 53px;
+}
+
+.custom-shape-divider-top-1712591499 .shape-fill {
+    fill: var(--bila);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1712591499 svg {
+        width: calc(100% + 1.3px);
+        height: 169px;
+    }
+}
+@media (max-width: 1050px) {
+    .obsahArticle{
+        margin: 0 !important;
+        text-align: center;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #logoUL{
+        display: none !important;
+    }
+    .ul{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    nav{
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+    #navkontakt{
+        top: 190px;
+        left: 50%;
+        width: 112px;
+        height: 45px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, 0);
+    }
+    .navmezera{
+        height: 200px;
+    }
+    #mainBody{
+        flex-direction: column;
+    }
+    #mainBody div{
+        font-size: 20px;
+    }
+    article{
+        flex-direction: column;
+    }
+    #onas article img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #onas article .obsahArticle{
+        margin: 0;
+    }
+    #onasbody {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    #onasbody .onasbod{
+        width: 100%;
+        margin-bottom: 5px;
+        height: auto;
+    }
+    #onasbody2 .onasbod {
+        margin-bottom: 20px;
+        width: 33%;
+    }
+    #mininovinky{
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+    }
+    #mininovinky h4{
+        font-size: 30px;
+    }
+    footer #minifooter{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        height: auto;
+        width: 100%;
+    }
+    footer #minifooter .castfooter{
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+    }
+    footer #minifooter .castfooter img{
+        width: 50%;
+    }
+    #onasbody2{
+        width: 100%;
+    }
+    .footernadpis{
+        margin-top: 20px;
+    }
+    iframe{
+        margin-top: 20px;
+    }
+    #onasprvni{
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+    .nejlepsirestaurace{
+        display: none;
+    }
+    #onasprvni iframe{
+        height: 400px !important;
+    }
+    .akcenadpis{
+        font-size: 50px;
+    }
+    #akce{
+        justify-content: space-around;
+    }
+    #kontakt{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrázkový Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="slider">
+        <div class="nadpis">
+            <h1>Objevte Dálný Východ</h1>
+            <p class="text">Jedinečná kultura, moderní inovace a bohatá historie</p>
+        </div>
+        <div class="slides">
+            <div class="slide"><img src="../img/letenkyVBusinessTride/orlova.jpg" alt="Obrázek 1"></div>
+            <div class="slide"><img src="../img/letenkyVBusinessTride/orlova2.jpg" alt="Obrázek 1"></div>
+            <div class="slide"><img src="../img/letenkyVBusinessTride/orlova3.jpg" alt="Obrázek 1"></div>
+            <div class="slide"><img src="../img/letenkyVBusinessTride/orlova4.jpg" alt="Obrázek 1"></div>
+        </div>
+    </div>
+    <div class="objednavka">
+        <ul>
+            <li>Letenky</li>
+            <li>Zájezdy</li>
+            <li>Ubytování</li>
+            <li>Stav letu</li>
+        </ul>
+        <form id="orderForm" action="">
+            <div class="row">
+                <div class="labelInput">
+                    <label for="odkud">Odkud: </label>
+                    <select name="odkud" id="odkud" required>
+                        <option value="" selected disabled>Vyberte možnost</option>
+                        <option value="prg">Praha (PRG)</option>
+                        <option value="jfk">New York (JFK)</option>
+                        <option value="hnd">Tokyo (HND)</option>
+                        <option value="lhr">Londýn (LHR)</option>
+                        <option value="cdg">Paříž (CDG)</option>
+                    </select>
+                </div>
+                <div class="labelInput">
+                    <label for="kam">Kam: </label>
+                    <select name="kam" id="kam" required>
+                        <option value="" selected disabled>Vyberte možnost</option>
+                        <option value="Praha">Praha (PRG)</option>
+                        <option value="New York">New York (JFK)</option>
+                        <option value="Tokyo">Tokyo (HND)</option>
+                        <option value="Londýn">Londýn (LHR)</option>
+                        <option value="Paříž">Paříž (CDG)</option>
+                    </select>
+                </div>
+                <div class="labelInput">
+                    <label for="od">Od: </label>
+                    <input type="date" name="od" id="od" required>
+                </div>
+                <div class="labelInput">
+                    <label for="do">Do: </label>
+                    <input type="date" name="do" id="do" required>
+                </div>
+                <div class="labelInput">
+                    <label for="typ">Typ: </label>
+                    <select name="typ" id="typ" required>
+                        <option value="" selected disabled>Vyberte možnost</option>
+                        <option value="Jednosmerna">Jednosměrná</option>
+                        <option value="Zpatecní">Zpáteční</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labelInput">
+                    <label for="jmeno">Jméno: </label>
+                    <input type="text" name="jmeno" id="jmeno" required>
+                </div>
+                <div class="labelInput">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="labelInput">
+                    <label for="tel">Telefon: </label>
+                    <input type="tel" name="tel" id="tel" required>
+                </div>
+                <div class="labelInput">
+                    <label for="narozeni">Datum narození</label>
+                    <input type="date" name="narozeni" id="narozeni" required>
+                </div>
+            </div>
+            <input type="submit" value="Odeslat" id="submit">
+        </form>
+    </div>
+</body>
+</html>

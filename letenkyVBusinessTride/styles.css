@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', arial, sans-serif;
+    transition: 0.5s;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: var(--cerna);
+}
+:root{
+    --bila: #FFFAF7;
+    --cerna: #222;
+    --mainSvetla: #D8EFF1;
+    --main: #00B0D3;
+    --mainTmavsi: #007E98;
+    --secondary: #e9bc03;
+    --secondarySlabsi: #849483;
+    --third: #d34400;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--main);
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /* nižší než objednavka */
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    min-width: 50%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    height: 500px;
+}
+
+.objednavka {
+    width: 1100px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: var(--mainTmavsi);
+    margin: auto;
+    margin-top: -100px;
+    position: relative;
+    /* Nastavit position pro z-index */
+    z-index: 5;
+    /* vyšší než slider */
+    overflow: hidden;
+}
+
+.objednavka ul {
+    display: flex;
+}
+
+.objednavka ul li {
+    width: 25%;
+    height: 70px;
+    background-color: var(--main);
+    color: var(--bila);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.objednavka ul li:first-child {
+    color: var(--bila);
+    background-color: var(--mainTmavsi);
+}
+
+.row {
+    display: flex;
+}
+
+.nadpis {
+    position: absolute;
+
+    top: 30%;
+    left: 15%;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200px;
+    color: white;
+}
+
+.text {
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 220px;
+}
+label{
+    color: var(--bila);
+}
+form div{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.labelInput{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.labelInput input, select{
+    height: 30px;
+    padding-left: 5px;
+}
+#email{
+    width: 270px;
+}
+.select{
+    display: flex;
+    align-items: center;
+}
+#submit{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px; 
+    background-color: var(--secondary);
+    font-size: 20px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: var(--third);
+}
