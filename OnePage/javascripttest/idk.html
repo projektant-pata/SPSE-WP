@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zobrazování textu při scrollu</title>
+  <style>
+    .hiddenText {
+      opacity: 0; /* Skrytí textu */
+      transform: translateY(50px); /* Posunutí dolů o 50px */
+      transition: opacity 0.5s ease, transform 0.5s ease; /* Animace při změně opacity a transformace */
+    }
+  </style>
+</head>
+<body>
+  <div style="height: 2000px;"> <!-- Pro zobrazení efektu posouvání stránky -->
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim lacinia, consectetur turpis ut, iaculis ex. Integer ut pulvinar felis. Mauris sit amet metus a justo lobortis posuere. Aenean venenatis turpis et efficitur consequat.</p>
+    <div>
+      <h2 class="hiddenText">Skrytý text 1</h2>
+      <p>Tento text se postupně zobrazí a vyjede zespoda při scrollu stránky.</p>
+    </div>
+    <div>
+      <h2 class="hiddenText">Skrytý text 2</h2>
+      <p>Tento text se také postupně zobrazí a vyjede zespoda při scrollu stránky.</p>
+    </div>
+  </div>
+  
+  <script src="js.js"></script>
+</body>

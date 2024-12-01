@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+    overflow-y: hidden;
+}
+
+ /*Nav bar*/
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    color: white;
+    background-color: #222222 ;
+    align-items: center;
+    height: 4vh;
+}
+nav p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.5s all ease 0s;
+
+}
+nav a{
+    text-decoration: none;
+}
+nav p:hover{
+    color: #666666 ;
+}
+nav li{
+    list-style-type: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}   
+nav li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+
+nav li a:hover{
+    color: #666666 ;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+#ll{   
+    display: flex;
+    flex-direction: row;
+}
+#lp{
+    background-color: #353535   ;
+    color: white;
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    height: 92vh;
+    transition: all 0.5s ease 0s;
+}
+#lp:hover{
+    background-color: #262626;
+}
+#pp{
+    background-color: white;
+    color: black;
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    height: 92vh;
+    transition: all 0.5s ease 0s;
+
+}
+#pp:hover{
+    background-color: #CCCCCC  ;
+}
+img{
+    margin-top: 15%;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.nadpis{
+    font-size: 5vh;
+}
+ /*Responsive*/
+ @media (max-width: 700px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin:0px ;
+    }
+    li{
+        margin-top: 10px;
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+    
+}
