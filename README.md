@@ -12,8 +12,8 @@
 
 Tento projekt je rozcestník všech webových stránek, které jsem vytvořil při studiu na střední škole při plnění úkolů od učitele Reného "Dusíka" Duse. Jsou to jedny z mých prvních stránek (první jsme vytvářeli už na základní škole).
 
-## ✨ Cil projektu
-Cilem bylo naucit se:
+## ✨ Cíl projektu
+Cilem bylo naučit se:
 - HTML
 - CSS
 - zaklady JS
@@ -35,7 +35,7 @@ Cilem bylo naucit se:
 - [Stranka vyuzivajici javascript (letiste)](#stranka-vyuzivajici-javascript-letiste)
 
 ### About me 
-#### Zadani
+#### Zadání
 Vytvořte webovou stránku "Moje portfolio". Stránka bude o vás (a také u většiny to bude první opravdová stránka), takže si ji personalizujte, jak jen chcete.
 
 ##### ✏️ Obsah:
@@ -86,7 +86,6 @@ Na webu bude umístěno 5 unikátních článků (pokud budete obsah přebírat 
 
 Stránka bude vypadat hezky!
 
-
 #### 🛠️ Technologie
 - HTML5
 - CSS3
@@ -102,7 +101,7 @@ Dalo by se tedy říct, že je to takový velký digitální kanvas, můžete po
 
 Tato výzva teď čeká na vás. 
 
-#### Zadani
+#### Zadání
 Vytvořte webovou stránku, která využíváonepage layout a vyberte si jedno z následujících témat:
 
 ##### Příběh
@@ -133,7 +132,7 @@ Grafikova práce je vidět, a ne vždy je možné ji popsat, vždycky jelepší 
 - CSS3
 - JavaScript
 
-### Zaverecny projekt
+### Závěrečný projekt
 Přišel konečně čas, na závěrečné předvedení vašich dovedností. Profesionálnímu kodérovi trvá cca 2 pracovní dny vytvořit a otestovat jednoduchou statickou webovou prezentaci. A co vám?
 Téma: Vlastní
 Vytvořte webovou stránku na vlastní téma. Téma by vám mělo být blízké, abyste o něm měli dostatek informací, může to být web o hře, filmů, nějakém produktů, o vašem koníčku, nebo třeba také prezentace firmy pro někoho známého, fantazii se meze nekladou.
@@ -151,8 +150,8 @@ Vytvořte webovou stránku na vlastní téma. Téma by vám mělo být blízké,
 - CSS3
 - JavaScript
 
-### Rozcestnik
-#### Zadani
+### Rozcestník
+#### Zadání
 Zprovozněte si již vytvořené účty na školním serveru Ilmp.spse-nezt.cz dle instrukcí na titulní stránce, nechte si vygenerovat heslo. Nainstalujte si nějaký FTP client doporučuji program FileZilla. Až si takto zprovozníte hosting vytvořte si soubor index.htmlplus samozřejmě příslušné css), který bude sloužit jako rozcestník pro vaše budoucí (může být i pro minulé) projekty. Bude to stránka kde se bude nacházet vaše jméno tlačítka pomocí, kterých se budeme přepínat do projektů, jež letos vzniknou. Samozřejmě si udělejte rozcestník nějak hezky, protože to je vaše vizitka a budou vám tam lézt možná i jiní učitelé.
 
 #### 🛠️ Technologie
@@ -160,7 +159,7 @@ Zprovozněte si již vytvořené účty na školním serveru Ilmp.spse-nezt.cz d
 - CSS3
 
 ### SEO
-#### Zadani
+#### Zadání
 Vyhledejte na internetu články o SEO, standardech a přístupnosti webu, a dalších informacích, které mohou pomoci k dobrému hodnocení webu a k jeho zařazení na přední místa ve vyhledávačích. SEO je tak trošku alchymie, neboť aktuální pravidla se neustále mění a jsou společnostmi jako Google přísně utajovaná.
 - vytvořte si na svém účtu Ilmp podsložku seo
 - vyhledejte relevantní informace o SEO opimalizaci (klíčová slova, sitemap, optimalizace textu na stránkách, zdroje, křížové odkazy, nadpisy, živé obsahy, ....)
@@ -278,7 +277,7 @@ https://www.entree-restaurant.cz/
 - HTML5
 - CSS3
 
-### Stranka vyuzivajici javascript (letiste)
+### Stranka využívající javascript (letiště)
 Jelikož se nám blíží konec školního roku a zajisté jste si užili příjemné chvíle strávené skriptováním Javascriptu, bylo by dobré si ho trošku prakticky vyzkoušet. Níže naleznete krátké zadání na jednoduchou webovou stránku, která již požaduje nějaká aktivnější přístup oproti statickým stránkám. Navrhněte takovou stránku, která bude pro komunikaci s uživatelem využívat Javascript.
 
 #### Webový formulář pro rezervaci letenek: 
@@ -306,7 +305,7 @@ Formulář by měl být i nějak hezky graficky zpracován.
     1.1 git clone https://github.https://hyvlri22.llmp.spse-net.cz/com/tvuj-profil/rozcestnik-webu.git
     1.2 otevřete soubor index.html v prohlížeči
 2. [Otevřete webovou stránku](https://hyvlri22.llmp.spse-net.cz/)
-- zatim tam nejsou projekty z prvaku, ty jsou jen na githubu
+- zatím tam nejsou projekty z prváku, ty jsou jen na githubu
 
 ## 📝 Můj komentář k projektu
-I když je to školní práce a začátky nebyly dokonalé, tento projekt mi pomohl pochopit základní principy tvorby webových stránek. Díky tomu jsem získal pevný základ pro složitější projekty, které tvořím dnes. Vsemu vdecim panu uciteli Dusikovi
+I když je to školní práce a začátky nebyly dokonalé, tento projekt mi pomohl pochopit základní principy tvorby webových stránek. Díky tomu jsem získal pevný základ pro složitější projekty, které tvořím dnes. Všemu vdecim panu uciteli Dusikovi
