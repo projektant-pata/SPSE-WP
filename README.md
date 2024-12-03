@@ -2,11 +2,11 @@
 Školní projekt z prvního a druhého ročníku SPŠE Pardubice.
 
 ## 🗂️ Obsah
-- [O projektu](#o-projektu)
-- [Cil projektu](#cil-projektu)
-- [Stránky v rozcestníku](#stranky-v-rozcestniku)
-- [Jak spustit projekt?](#jak-spustit-projekt)
-- [Můj komentář k projektu](#muj-komentar-k-projektu)
+- [O projektu](#-o-projektu)
+- [Cil projektu](#-cil-projektu)
+- [Stránky v rozcestníku](#-stranky-v-rozcestniku)
+- [Jak spustit projekt?](#-jak-spustit-projekt)
+- [Můj komentář k projektu](#-muj-komentar-k-projektu)
 
 ## 📖 O projektu
 
